@@ -1,17 +1,23 @@
-print('Primeira nota:')
-n1 = input()
-print('Segunda nota:')
-n2 = input()
-print('Terceira nota:')
-n3 = input()
-print ('Quarta nota:')
-n4 = input()
+# Lê 4 notas de um aluno e calcula sua média final. Se for maior ou igual 5, o aluno foi aprovado. Se for menor, o aluno é reprovado.
 
-md = (n1+n2+n3+n4)/4
+def returnMedia(array):
+    media = sum(array) / len(array) 
 
-print ('Sua média foi de:', md)
+    return media
 
-if md >= 5: 
-    print('Você foi aprovado')
+arrayNotas = []
+aux = 0
+
+while (aux < 4): 
+    nota = input(f'Digite a nota {aux + 1} :')
+    arrayNotas.append(float(nota))
+    aux += 1
+
+notaFinal = returnMedia(arrayNotas)
+
+print('Sua nota foi:',notaFinal)
+
+if (notaFinal >= 5):
+    print('Você foi aprovado!')
 else:
-    print('Você não foi aprovado')    
+    print ('Você foi reprovado!')
