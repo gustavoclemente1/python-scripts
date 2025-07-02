@@ -1,5 +1,7 @@
+## This code defines a simple class `Point` with an initializer and a method to get the coordinates.
+
 class Point:
-    def __init__(self, x=5, y=5):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
@@ -17,7 +19,7 @@ class Point:
         self.y += offsety
 
     def __repr__(self):
-        return '()' + str(self.x) + ',' + str(self.y) + ')'
+        return '(' + str(self.x) + ',' + str(self.y) + ')'
 
     # No exercício proposto da aula, o algoritmo terá que somar de ambas as formas abaixo:
     # x + y ==> (2,3) + (2,2) = (4,5) Soma-se x com x e y com y
@@ -29,7 +31,6 @@ class Point:
         else:
             return Point(self.x + other, self.y + other)
         
-p = Point()
-
-print (p)
-
+p = Point(1,2)
+q = Point(2,3)
+print(p+1)
