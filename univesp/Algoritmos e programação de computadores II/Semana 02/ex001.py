@@ -1,16 +1,14 @@
-## This code defines a simple class `Point` with an initializer and a method to get the coordinates. 
-
 class Point:
-
-    def __init__(self, x, y):
+    def setx(self, x):
         self.x = x
+
+    def sety(self, y):
         self.y = y
 
-    def get(self):
-        return (self.x, self.y)
-    
-a = Point(1,2)
-print(a.get())
+    def __repr__(self):
+        return '({},{})'.format(self.x, self.y)
 
-        
-        
+ponto = Point()
+ponto.setx(4)
+ponto.sety(2)
+print(ponto)
