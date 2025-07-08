@@ -31,6 +31,6 @@ class Point:
         else:
             return Point(self.x + other, self.y + other)
         
-p = Point(1,2)
+p = Point(3,2)
 q = Point(2,3)
 print(p+1)
