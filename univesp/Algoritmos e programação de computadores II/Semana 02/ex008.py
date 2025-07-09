@@ -1,4 +1,4 @@
-# Baralho de 52 cartas que retorna uma carta aleatóriamente.
+# Baralho de 52 cartas ou não que retorna uma carta aleatóriamente.
 
 from random import shuffle
 
